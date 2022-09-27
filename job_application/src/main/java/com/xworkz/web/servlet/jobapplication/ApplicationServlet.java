@@ -40,7 +40,11 @@ public class ApplicationServlet extends HttpServlet {
 		String yop = res.getParameter("ApplicantYop");
 		String university = res.getParameter("ApplicantUniversity");
 		String address = res.getParameter("ApplicantAdress");
-		String skill = res.getParameter("ApplicantSkill");
+		String[] skill = res.getParameterValues("skill");
+		if(skill!=null)
+		for (String ref : skill) {
+			System.out.println("skills selected"+ref);
+		}
 		String salary = res.getParameter("ApplicantSalary");
 		String experince = res.getParameter("ApplicantExperince");
 		String idProof = res.getParameter("ApplicantIdProof");
@@ -69,7 +73,7 @@ public class ApplicationServlet extends HttpServlet {
 				.append(alternatPhoneNo).append("</br>").append("<br>").append("Gender : ").append(gender).append("</br>").append("<br>")
 				.append("Qualification : ").append(qualification).append("<br>").append("</br>").append("YOP : ").append(yop).append("</br>").append("<br>")
 				.append("University : ").append(university).append("</br>").append("<br>").append("Address : ").append(address).append("<br>")
-				.append("</br>").append("Skills : ").append(skill).append("</br>").append("<br>").append("Salary : ").append(salary).append("<br>")
+				.append("</br>").append("</br>").append("<br>").append("Salary : ").append(salary).append("<br>")
 				.append("</br>").append("Experince : ").append(experince).append("</br>").append("<br>").append("IdProof : ").append(idProof).append("<br>")
 				.append("</br>").append("IdProofNumber : ").append(idProofNumber).append("</br>").append("</body>")
 				.append("</html>");

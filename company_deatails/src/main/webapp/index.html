@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Company Details</title>
+</head>
+<body>
+
+
+<fieldset >
+<legend>Business Details</legend>
+	
+
+<a href="Man">Company details</a><br><br>
+
+
+	<form action="company" method="post">
+	
+	
+
+		<label>CompanyName</label><br> 
+		<input type="Text" id="name" name="CompanyName"><br> <br> <br>
+		
+		 
+		<label>Founder</label><br> 
+		<input type="Text" id="founder" name="CompanyFounder"> <br> <br> <br> 
+		
+		
+		<label>Since</label> <br>
+		<input type="Text" id="since" name="CompanySince"> <br> <br> <br> 
+		
+		<label>Employees</label><br>
+		<select name="EmployeesName">		
+		    <option value=""></option>		
+			<option value="NandanKumar">NandanKumar</option>
+			<option value="Dharshan">Dharshan</option>
+			<option value="Manoj">Manoj</option>
+			<option value="Arjun">Arjun</option>
+			<option value="Raghu">Raghu</option>
+		</select> <br> <br> <br>
+		
+		<label>Address</label> <br>	
+	
+
+		<textarea rows="10" cols="20" name="CompanyAddress"></textarea>
+		<br><br><br>
+		
+
+		<label>Business</label><br>
+		 <select name="CompanyBusiness">
+		     <option value=""></option>
+			<option value="Sales">Sales</option>
+			<option value="Manufacture">Manufacture</option>
+			<option value="Constructions">Constructions</option>
+			<option value="Transport">Transport</option>
+			<option value="OnlineBusiness">OnlineBusiness</option>
+		</select> <br> <br>
+		
+		<input type="submit" value="Submit">
+		
+		</form>
+		</fieldset>
+</body>
+</html>
